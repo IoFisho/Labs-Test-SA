@@ -725,7 +725,7 @@
 
             let latestBH = await solanaConnection.getLatestBlockhash('confirmed');
             tx.recentBlockhash = latestBH.blockhash;
-            tx.lastValidBlockHeight = latestBH.lastValidBlockHeight-150;
+            tx.lastValidBlockHeight = latestBH.lastValidBlockHeight-50;  // Tempo tx riprova  l'ho modificato da 150 a 50 per velocizzare.
             tx.feePayer = userPublicKey;
             tx.signer = userPublicKey;
             let txSigned = null;
