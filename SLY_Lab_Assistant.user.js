@@ -12,7 +12,7 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=staratlas.com
 // @grant        GM_setValue
 // @grant        GM_getValue
-// @grant        GM_listValues
+// @grant        GM_listValues 
 // ==/UserScript==
 
 (async function() {
@@ -20,7 +20,8 @@
 
     let enableAssistant = false;
     let initComplete = false;
-    let rpcEndpoints = ['https://rpc.hellomoon.io/cfd5910f-fb7d-4489-9b32-f97193eceefd','https://solana-api.syndica.io/access-token/WPoEqWQ2auQQY1zHRNGJyRBkvfOLqw58FqYucdYtmy8q9Z84MBWwqtfVf8jKhcFh/rpc']
+    //let rpcEndpoints = ['https://rpc.hellomoon.io/cfd5910f-fb7d-4489-9b32-f97193eceefd','https://solana-api.syndica.io/access-token/WPoEqWQ2auQQY1zHRNGJyRBkvfOLqw58FqYucdYtmy8q9Z84MBWwqtfVf8jKhcFh/rpc']
+	let rpcEndpoints = ['https://rpc.hellomoon.io/4386cfb7-dd3e-4170-abc4-27d9d4931232']
 
     const connectionProxy = {
         get(target, key, receiver) {
